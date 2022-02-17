@@ -21,7 +21,8 @@ return new class extends Migration
             $table->foreignId('department_id')->constrained();
             $table->foreignId('program_id')->constrained();
             $table->foreignId('year_level_id')->constrained();
-            //$table->timestamps();
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 
